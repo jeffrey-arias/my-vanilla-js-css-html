@@ -5,6 +5,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Templi, Code, Challenge">
     <meta name="author" content="Jeffrey Arias">
     <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./javascript/main.js" /></script>
@@ -32,45 +33,119 @@
         <section class="mainSection">
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat1.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                    <!--Laptop breakpoint-->
+                    <source media="(min-width: 60rem)" srcset="./images/cat1.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat1.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30rem)" srcset="./images/cat1.jpeg">
+                   
+                    <img src="./images/cat1.jpeg" class="cardImage" alt="an ai generated robot cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated robot cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat2.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                     <!--Laptop breakpoint-->
+                     <source media="(min-width: 60rem)" srcset="./images/cat2.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat2.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat2.jpeg">
+                    <img src="./images/cat2.jpeg" class="cardImage" alt="an ai generated space cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated space cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat3.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                    <!--Laptop breakpoint-->
+                    <source media="(min-width: 60rem)" srcset="./images/cat3.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat3.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat3.jpeg">
+                    <img src="./images/cat3.jpeg" class="cardImage" alt="an ai generated dazed cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated dazed cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat4.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                     <!--Laptop breakpoint-->
+                     <source media="(min-width: 60rem)" srcset="./images/cat4.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat4.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat4.jpeg">
+                    <img src="./images/cat4.jpeg" class="cardImage" alt="an ai generated surpised cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated surpised cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat5.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                    <!--Laptop breakpoint-->
+                    <source media="(min-width: 60rem)" srcset="./images/cat5.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat5.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat5.jpeg">
+                    <img src="./images/cat5.jpeg" class="cardImage" alt="an ai generated chill cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated chill cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat6.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                    <!--Laptop breakpoint-->
+                    <source media="(min-width: 60rem)" srcset="./images/cat6.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat6.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat6.jpeg">
+                    <img src="./images/cat4.jpeg" class="cardImage" alt="an ai generated thinking cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated thinking cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat7.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                    <!--Laptop breakpoint-->
+                    <source media="(min-width: 60rem)" srcset="./images/cat7.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat7.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat7.jpeg">
+                    <img src="./images/cat4.jpeg" class="cardImage" alt="an ai generated running cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated running cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
-                <img src="./images/cat8.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+                <picture>
+                    <!--Simulating media responsiveness here -->
+                    <!--Laptop breakpoint-->
+                    <source media="(min-width: 60rem)" srcset="./images/cat8.jpeg">
+                    <!--Tablet breakpoint -->
+                    <source media="(min-width: 48rem)" srcset="./images/cat8.jpeg">
+                    <!--Mobile breakpoint -->
+                    <source media="(min-width: 30em)" srcset="./images/cat8.jpeg">
+                    <img src="./images/cat8.jpeg" class="cardImage" alt="an ai generated funky cat"/>
+                </picture>
+                <figcaption class="cardDescription">This is an AI generated funky cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
         </section>
     </main>
-    <footer>© Jeffrey Arias</footer>
+    <footer>© Jeffrey Arias &nbsp;<time datetime="2023-03-04T00:00:00Z">March 4 2023</time>
+    </footer>
 </body>

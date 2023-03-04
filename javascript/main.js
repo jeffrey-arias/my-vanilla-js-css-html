@@ -1,5 +1,5 @@
 function clearLikesFromSession() {
-  const likes = sessionStorage.setItem("likes", "0");
+  sessionStorage.setItem("likes", "0");
 }
 
 function clearLikes() {
@@ -17,14 +17,17 @@ function clearLikes() {
 
 function likeAll() {
   const elements = document.getElementsByClassName("iconUnselected");
+  const likes = sessionStorage.getItem("likes");
+  let numberOfLikes = likes ? parseInt(likes) : 0;
   if (elements) {
     Array.from(elements).forEach((element) => {
       element.setAttribute("selected", true);
       element.classList.add("iconSelected");
       element.classList.remove("iconUnselected");
+      numberOfLikes++;
     });
-    sessionStorage.setItem("likes", "8");
-    document.getElementById("likesCounter").innerHTML = "8";
+    sessionStorage.setItem("likes", numberOfLikes);
+    document.getElementById("likesCounter").innerHTML = numberOfLikes;
   }
 }
 
@@ -32,12 +35,12 @@ function toggleSelection(element) {
   const isSelected = element.getAttribute("selected");
   if (isSelected) {
     element.removeAttribute("selected");
-    element.classList.add("iconUnselected");
     element.classList.remove("iconSelected");
+    element.classList.add("iconUnselected");
   } else {
     element.setAttribute("selected", true);
-    element.classList.add("iconSelected");
     element.classList.remove("iconUnselected");
+    element.classList.add("iconSelected");
   }
   const likes = sessionStorage.getItem("likes");
   let numberOfLikes = parseInt(likes);
