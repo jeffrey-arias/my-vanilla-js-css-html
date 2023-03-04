@@ -1,0 +1,145 @@
+body {
+    background-color: #F7F7F7;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0 20 0 20;
+    height: 50;
+    line-height: 50px;
+    background-color: #7DA2A9;
+    color: white;
+    vertical-align: middle;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+main {
+    margin: 20 20 100 20
+}
+
+figure {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.pageTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.iconHeader {
+    height: 32;
+    width: 32;
+    margin: 5;
+    background-image: url("../images/heart_header.png");
+}
+
+.iconSelected {
+    max-height: 32;
+    max-width: 32;
+    margin: 5;
+    background-image: url("../images/heart_selected_32x32.png");
+}
+
+
+.iconUnselected {
+    max-height: 32;
+    max-width: 32;
+    margin: 5;
+    background-image: url("../images/heart_unselected_32x32.png");
+}
+
+.likesCounter {
+    height: 32;
+    width: 32;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.cardImage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    z-index: -1;
+}
+
+.cardDescription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300;
+    width: 300;
+    font-size: small;
+    color: black;
+    transition: .5s ease;
+    opacity: 0;
+    margin-top: -300;
+    text-align: center;
+}
+
+.cardContainer {
+    height: auto;
+    width: 300;
+    margin: 5;
+    background-color: white;
+    padding: 10;
+    cursor: not-allowed;
+}
+
+.cardContainer:hover .cardImage {
+    opacity: 0.3;
+}
+  
+.cardContainer:hover .cardDescription {
+    opacity: 1;
+}
+
+.cardIcon {
+    display: flex;
+    position: absolute;
+    margin: 5 5 5 250;
+    height: 32;
+    width: 32;
+    z-index: 100;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.cardIcon:active  {
+    transform:scale(2);
+}
+
+.animateIcon {
+    transform:scale(2);
+}

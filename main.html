@@ -1,0 +1,72 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Templi Code Challenge</title>
+    <meta name="description" content="This is a code challenge by Templi that uses vanilla JS, CSS and HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Templi, Code, Challenge">
+    <meta name="author" content="Jeffrey Arias">
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./javascript/main.js" /></script>
+</head>
+<body onload="loadLikesFromSession()">
+    <header>
+        <div>
+            <text class="headerItems"><strong>Templi AI<strong></text>
+        </div>
+        <div class="headerRight">
+            <span class="iconHeader">
+                <text class="likesCounter" id="likesCounter" name="likesCounter">0</text>
+            </span>   
+            <text>Likes</text> 
+        </div>
+    </header>
+    <main>
+        <div class="pageTitle">
+            <h1 class="pageTitle">AI Generated Cats</h1>
+        </div>
+        <section class="mainSection">
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat1.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat2.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat3.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat4.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat5.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat6.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat7.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is am AI generated cat image</figcaption>
+            </figure>
+            <figure class="cardContainer">
+                <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
+                <img src="./images/cat8.jpeg" class="cardImage" alt="a robot cat"/>
+                <figcaption class="cardDescription">This is am AI generated cat image</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>© Jeffrey Arias</footer>
+</body>
