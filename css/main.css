@@ -75,6 +75,11 @@ figure {
     justify-content: center;
 }
 
+.buttonContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
 .mainSection {
     display: flex;
     flex-direction: row;

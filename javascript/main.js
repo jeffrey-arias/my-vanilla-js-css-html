@@ -2,13 +2,24 @@ function loadLikesFromSession() {
   const likes = sessionStorage.setItem("likes", "0");
 }
 
+function clearLikes() {
+  const elements = document.getElementsByClassName("iconSelected");
+  if (elements) {
+    Array.from(elements).forEach((element) => {
+      element.removeAttribute("selected");
+      element.classList.add("iconUnselected");
+      element.classList.remove("iconSelected");
+    });
+    sessionStorage.setItem("likes", "0");
+    document.getElementById("likesCounter").innerHTML = "0";
+  }
+}
 function toggleSelection(element) {
   const isSelected = element.getAttribute("selected");
   if (isSelected) {
     element.removeAttribute("selected");
     element.classList.add("iconUnselected");
     element.classList.remove("iconSelected");
-    document.getanimateIcon;
   } else {
     element.setAttribute("selected", true);
     element.classList.add("iconSelected");
