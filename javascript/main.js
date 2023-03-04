@@ -1,4 +1,4 @@
-function loadLikesFromSession() {
+function clearLikesFromSession() {
   const likes = sessionStorage.setItem("likes", "0");
 }
 
@@ -14,6 +14,20 @@ function clearLikes() {
     document.getElementById("likesCounter").innerHTML = "0";
   }
 }
+
+function likeAll() {
+  const elements = document.getElementsByClassName("iconUnselected");
+  if (elements) {
+    Array.from(elements).forEach((element) => {
+      element.setAttribute("selected", true);
+      element.classList.add("iconSelected");
+      element.classList.remove("iconUnselected");
+    });
+    sessionStorage.setItem("likes", "8");
+    document.getElementById("likesCounter").innerHTML = "8";
+  }
+}
+
 function toggleSelection(element) {
   const isSelected = element.getAttribute("selected");
   if (isSelected) {

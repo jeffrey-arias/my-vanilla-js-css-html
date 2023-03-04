@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./javascript/main.js" /></script>
 </head>
-<body onload="loadLikesFromSession()">
+<body onload="clearLikesFromSession()">
     <header>
         <div>
             <text class="headerItems"><strong>Templi AI<strong></text>
@@ -26,7 +26,8 @@
             <h1 class="pageTitle">AI Generated Cats</h1>
         </div>
         <div class="buttonContainer">
-            <button onclick="clearLikes()">Clear Likes</button>
+            <button onclick="clearLikes()">Clear likes</button>
+            <button onclick="likeAll()">Like all</button>
         </div>
         <section class="mainSection">
             <figure class="cardContainer">
@@ -62,12 +63,12 @@
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
                 <img src="./images/cat7.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is am AI generated cat image</figcaption>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
             <figure class="cardContainer">
                 <i class="iconUnselected cardIcon" onclick="toggleSelection(this);"></i>
                 <img src="./images/cat8.jpeg" class="cardImage" alt="a robot cat"/>
-                <figcaption class="cardDescription">This is am AI generated cat image</figcaption>
+                <figcaption class="cardDescription">This is an AI generated cat image. Purr-fectly engineered by AI for maximum cuteness. Even this caption is AI generated. Meow!</figcaption>
             </figure>
         </section>
     </main>
