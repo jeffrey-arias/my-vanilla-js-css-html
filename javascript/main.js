@@ -1,7 +1,15 @@
+/**
+ * Clears the sesion storage for the "likes" item.
+ * Need to call this each time the page is reloaded.
+ */
 function clearLikesFromSession() {
   sessionStorage.setItem("likes", "0");
 }
 
+/**
+ * Clear likes functionality.
+ * Removes all likes from all available items.
+ */
 function clearLikes() {
   const elements = document.getElementsByClassName("iconSelected");
   if (elements) {
@@ -15,6 +23,10 @@ function clearLikes() {
   }
 }
 
+/**
+ * Like all functionality.
+ * Likes all available items.
+ */
 function likeAll() {
   const elements = document.getElementsByClassName("iconUnselected");
   const likes = sessionStorage.getItem("likes");
@@ -31,6 +43,10 @@ function likeAll() {
   }
 }
 
+/**
+ * Toggles the "like"/"unlike" of an item and increments/decrements the "likes" counter.
+ * @param element
+ */
 function toggleSelection(element) {
   const isSelected = element.getAttribute("selected");
   if (isSelected) {
