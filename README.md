@@ -5,6 +5,8 @@ This webapp is designed to maximize:
 1. SEO friendliness by using HTML semantic tags.
 2. Performance by using the fastest JS and CSS possible to perform the task at hand.
 
+[View Live Demo](https://www.youtube.com/watch?v=616gyTYf204)
+
 # Instructions
 1. Checkout all the contents of this repository using `gh repo clone jeffrey-arias/my-vanilla-js-css-html` or by using [this](https://github.com/jeffrey-arias/my-vanilla-js-css-html.git) link.
 2. Locate and open the `main.html` file on your browser. 
