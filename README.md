@@ -8,7 +8,8 @@ This webapp is designed to maximize:
 [<img width="1440" alt="1" src="https://user-images.githubusercontent.com/81260130/224724272-f4045efe-7919-4ece-93e8-825c77a1be0c.png">
 ](https://www.youtube.com/watch?v=616gyTYf204)
 
-[View Live Demo](https://www.youtube.com/watch?v=616gyTYf204)
+# 🌐 Live Site
+**[https://vanillacsshtml.netlify.app/](https://vanillacsshtml.netlify.app/)**
 
 # Instructions
 1. Checkout all the contents of this repository using `gh repo clone jeffrey-arias/my-vanilla-js-css-html` or by using [this](https://github.com/jeffrey-arias/my-vanilla-js-css-html.git) link.
