@@ -77,6 +77,10 @@ figure {
     display: flex;
     justify-content: end;
     width: 100%;
+    @media (max-width: 768px) {
+        justify-content: space-between;
+}
+
 }
 
 .mainSection {
